@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ViewRecMaterDetail_TableRowProductCN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.28"
+        android:paddingLeft="2dp"
+        android:text="ProductCN"
+        android:textSize="11dp" />
+
+    <EditText
+        android:id="@+id/ViewRecMaterDetail_TableRowBatchNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.28"
+        android:digits="1234567890"
+        android:hint="Batch No."
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingLeft="2dp"
+        android:selectAllOnFocus="true"
+        android:textSize="11dp" />
+
+    <EditText
+        android:id="@+id/ViewRecMaterDetail_TableRowExpiry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.28"
+        android:digits="1234567890"
+        android:hint="Expiry"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingLeft="2dp"
+        android:selectAllOnFocus="true"
+        android:textSize="11dp" />
+
+    <EditText
+        android:id="@+id/ViewRecMaterDetail_TableRowInvoicedQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.28"
+        android:digits="1234567890"
+        android:hint="Invoiced"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingLeft="2dp"
+        android:selectAllOnFocus="true"
+        android:textSize="11dp" />
+
+    <EditText
+        android:id="@+id/ViewRecMaterDetail_TableRowRecievedQuanitity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.28"
+        android:digits="1234567890"
+        android:hint="Received"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingLeft="2dp"
+        android:selectAllOnFocus="true"
+        android:textSize="11dp" />
+</LinearLayout>

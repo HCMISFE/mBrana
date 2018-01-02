@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/noPadding"
+    android:paddingLeft="@dimen/noPadding"
+    android:paddingRight="@dimen/noPadding"
+    android:paddingTop="@dimen/noPadding"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.jsi.mbrana.Workflow.Order.OrderMenuActivity"
+    tools:showIn="@layout/activity_po">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/activity_main_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/po_polisttable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

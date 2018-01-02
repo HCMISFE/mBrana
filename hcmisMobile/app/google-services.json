@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "545048901387",
+    "firebase_url": "https://jsi-ethiopia-notification.firebaseio.com",
+    "project_id": "jsi-ethiopia-notification",
+    "storage_bucket": "jsi-ethiopia-notification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545048901387:android:9b3c7e6502ad1ed0",
+        "android_client_info": {
+          "package_name": "com.jsi.mbrana"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545048901387-gkrea1a25m34m0srb0drq0if02ut19kn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo25WUFgCZ1Ibk5ZvcvjAIlxHv9BjueVM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545048901387:android:0ffd309ceaa7f2fe",
+        "android_client_info": {
+          "package_name": "com.jsi.mbrana.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545048901387-gkrea1a25m34m0srb0drq0if02ut19kn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo25WUFgCZ1Ibk5ZvcvjAIlxHv9BjueVM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545048901387:android:4f10d19d714794dd",
+        "android_client_info": {
+          "package_name": "com.jsi.mbrana.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545048901387-gkrea1a25m34m0srb0drq0if02ut19kn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo25WUFgCZ1Ibk5ZvcvjAIlxHv9BjueVM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545048901387:android:e0979e88f117b091",
+        "android_client_info": {
+          "package_name": "com.jsi.mbrana.debugging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "545048901387-gkrea1a25m34m0srb0drq0if02ut19kn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo25WUFgCZ1Ibk5ZvcvjAIlxHv9BjueVM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

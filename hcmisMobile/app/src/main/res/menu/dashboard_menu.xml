@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<item-->
+        <!--android:id="@+id/action_home"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:icon="@drawable/ic_apps_white_18dp"-->
+        <!--android:title="@string/action_Home"-->
+        <!--app:showAsAction="always" />-->
+    <item
+        android:orderInCategory="101"
+        android:title="Stock Status"
+        app:showAsAction="never"/>
+    <item
+        android:orderInCategory="101"
+        android:title="Facilities that have not reordered "
+        app:showAsAction="never"/>
+    <item
+        android:orderInCategory="101"
+        android:title="List of facility with issue"
+        app:showAsAction="never"/>
+    <item
+        android:orderInCategory="101"
+        android:title="Bincard"
+        app:showAsAction="never"/>
+</menu>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/smallPadding"
+    android:paddingLeft="@dimen/noPadding"
+    android:paddingRight="@dimen/noPadding"
+    android:paddingTop="@dimen/noPadding"
+    tools:context=".Workflow.Reports.StockStatusActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginEnd="2dp"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <CheckBox
+            android:id="@+id/isCampinCheckBoxSOH"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Is Campaign" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borderline_background"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp">
+
+        <TextView
+            android:id="@+id/ss_TableRowProductCN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.24"
+            android:text="Item"
+            android:textAlignment="viewStart"
+            android:textSize="6pt" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:text="AWC"
+            android:textColor="@color/black"
+            android:textSize="6.5pt" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:text="WOS"
+            android:textColor="@color/black"
+            android:textSize="6.5pt" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:paddingLeft="6dp"
+            android:text="Expired"
+            android:textSize="6.5pt" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:paddingLeft="6dp"
+            android:text="Near Expired"
+            android:textSize="6.5pt" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:text="VVM  Expired"
+            android:textColor="@color/black"
+            android:textSize="6.5pt" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:text="SOH"
+            android:textColor="@color/black"
+            android:textSize="6.5pt" />
+
+        <TextView
+            android:id="@+id/ss_TableRowSOH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:text="Usable SOH"
+            android:textColor="@color/black"
+            android:textSize="6.5pt" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#c0c0c0" />
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeStockStatusContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/StockStatusList_TableContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

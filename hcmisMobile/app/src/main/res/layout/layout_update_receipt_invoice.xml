@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp">
+
+        <TextView
+            android:id="@+id/UpdateRIMaterInput_TableRowNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:textAlignment="center"
+            android:text="No."
+            android:textSize="6.5pt" />
+
+        <TextView
+            android:id="@+id/UpdateRIMaterInput_TableRowProductCN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.32"
+            android:text="Item"
+            android:textSize="6.5pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/inputUpdateRIMaterInput_TableRowExpiry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:hint="Expiry"
+            android:inputType="text"
+            android:textSize="6.5pt" />
+
+        <EditText
+            android:id="@+id/UpdateRIMaterInput_TableRowRecievedBatch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.27"
+            android:background="@android:color/transparent"
+            android:hint="Batch"
+            android:inputType="text"
+            android:selectAllOnFocus="true"
+            android:textSize="6.5pt" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.31"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/vvm_spinnerupdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/UpdateReceiptInput_TableRowRecievedQuanitity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.32"
+            android:hint="Received"
+            android:inputType="number"
+            android:maxLength="5"
+            android:selectAllOnFocus="true"
+            android:textAlignment="viewEnd"
+            android:textSize="6.5pt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="18dp">
+
+        <TextView
+            android:id="@+id/UpdateRIMaterInput_TableRowUnit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:text="Unit"
+            android:textColor="@color/gray4"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/UpdateRIMaterInput_TableRowManufacturer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.25"
+            android:paddingLeft="0.5dp"
+            android:text="Manufacturer"
+            android:textColor="@color/gray4"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/inputUpdateRIMaterInput_TableRowInvoicedQ"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.75"
+            android:hint="Invoiced"
+            android:paddingLeft="2dp"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/gray4"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/AddNewRIMaterInput_TableRowNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.36"
+            android:text="No."
+            android:textSize="6.5pt" />
+
+        <TextView
+            android:id="@+id/AddNewRIMaterInput_TableRowProductCN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.32"
+            android:text="Item"
+            android:textSize="6.5pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/inputAddNewRIMaterInput_TableRowExpiry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:hint="Expiry"
+            android:inputType="text"
+            android:textSize="6.5pt" />
+
+        <EditText
+            android:id="@+id/inputAddNewRIMaterInput_TableRowBatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.27"
+            android:background="@drawable/inputtextdrawable"
+            android:gravity="end"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:text="6"
+            android:textSize="@dimen/primaryTextSize" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.31"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/vvm_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:textSize="2sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/AddNewRIMaterInput_TableRowRecievedQuanitity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.32"
+            android:background="@drawable/inputtextdrawable"
+            android:digits="1234567890"
+            android:gravity="end"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:text="6"
+            android:textSize="@dimen/primaryTextSize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="18dp">
+
+        <TextView
+            android:id="@+id/AddNewRIMaterInput_TableRowUnit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.19"
+            android:text="Unit"
+            android:textColor="@color/gray4"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/inputAddNewRIMaterInput_TableRowManufacturer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:paddingLeft="1dp"
+            android:text="Manufacturer"
+            android:textColor="@color/gray4"
+            android:textSize="11dp" />
+
+        <ProgressBar
+            android:id="@+id/horizontal_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.24"
+            android:indeterminate="false"
+            android:max="100"
+            android:paddingLeft="38dp"
+            android:progress="100"
+            android:progressBackgroundTint="@android:color/holo_green_dark"
+            android:textAlignment="viewEnd" />
+    </LinearLayout>
+</LinearLayout>

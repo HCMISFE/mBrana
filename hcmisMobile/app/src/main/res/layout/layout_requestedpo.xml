@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/smallPadding"
+    android:paddingBottom="@dimen/smallPadding">
+
+    <TextView
+        android:id="@+id/requestedPO_rowno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:text="No."
+        android:textSize="@dimen/PO_PrimaryTextSize" />
+
+    <TextView
+        android:id="@+id/requestedPO_ItemColumn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:text="Item"
+        android:textColor="@color/black"
+        android:textSize="@dimen/PO_PrimaryTextSize" />
+
+    <TextView
+        android:id="@+id/requestedPO_DTextview"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:text="D"
+        android:textSize="@dimen/PO_PrimaryTextSize" />
+
+    <TextView
+        android:id="@+id/requestedPO_WFTextview"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:text="WF"
+        android:textSize="@dimen/PO_PrimaryTextSize" />
+
+    <TextView
+        android:id="@+id/requestedPO_TCTextview"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:text="TC"
+        android:textSize="@dimen/PO_PrimaryTextSize" />
+
+    <TextView
+        android:id="@+id/requestedPO_BBTextview"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:text="BB"
+        android:textSize="@dimen/PO_PrimaryTextSize" />
+
+    <TextView
+        android:id="@+id/requestedPO_QRTextview"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:text="QR"
+        android:textSize="@dimen/PO_PrimaryTextSize" />
+
+    <TextView
+        android:id="@+id/requestedPO_CTextview"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:text="C"
+        android:textSize="@dimen/PO_PrimaryTextSize" />
+
+    <TextView
+        android:id="@+id/requestedPO_LTextview"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:text="L"
+        android:textSize="@dimen/PO_PrimaryTextSize" />
+
+    <TextView
+        android:id="@+id/requestedPO_EBTextview"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:text="EB"
+        android:textSize="@dimen/PO_PrimaryTextSize" />
+
+    <TextView
+        android:id="@+id/requestedPO_QtyColumn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:inputType="number"
+        android:maxLength="4"
+        android:text="Req"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/PO_PrimaryTextSize"
+        android:paddingLeft="1dp"/>
+
+    <TextView
+        android:id="@+id/systemPO_QtyColumn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:inputType="number"
+        android:text="Calc"
+        android:maxLength="4"
+        android:paddingLeft="1dp"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/PO_PrimaryTextSize" />
+</LinearLayout>

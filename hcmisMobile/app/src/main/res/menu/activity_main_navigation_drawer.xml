@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/mflow_report"
+            android:title="Report" />
+        <item
+            android:id="@+id/nav_emergency_vrf"
+            android:icon="@drawable/mflow_purchaseorder"
+            android:title="Emergency VRF" />
+    </group>
+
+    <item android:title="Setting">
+        <menu>
+            <item
+                android:id="@+id/nav_changepassword"
+                android:icon="@drawable/mflow_setting"
+                android:title="Change Password" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/mflow_logout"
+                android:title="Log out" />
+            <item
+                android:id="@+id/nav_update"
+                android:icon="@drawable/mflow_update"
+                android:title="Check for update" />
+        </menu>
+    </item>
+</menu>

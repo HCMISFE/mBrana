@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/xPaddingSize"
+    android:paddingTop="@dimen/xPaddingSize"
+    android:paddingRight="@dimen/xRPaddingSize">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/pendingOrder_FirstLetter"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_blue"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/unknown"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/firstLetterTextSize"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/smallPadding"
+        android:paddingLeft="@dimen/smallPadding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/pendingOrder_facilityColumn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:layout_weight="0.2"
+                android:text="Facility"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:id="@+id/pendingOrder_dateColumn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:gravity="right"
+                android:text="Date"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_requested_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Req. Items"
+                android:textColor="@color/gray4"
+                android:textSize="@dimen/secondaryTextSize" />
+
+            <TextView
+                android:id="@+id/tv_processed_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Proc. Items"
+                android:textColor="@color/gray4"
+                android:textSize="@dimen/secondaryTextSize" />
+
+            <TextView
+                android:id="@+id/pendingOrder_statusColumn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:paddingRight="2pt"
+                android:text="Status"
+                android:textColor="@color/gray4"
+                android:textSize="@dimen/secondaryTextSize"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

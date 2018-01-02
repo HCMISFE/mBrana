@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">mBrana-Dev</string>
+    <string name="action_Home">Home</string>
+    <string name="title_activity_main_navigation">mBrana-Dev</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_po">PO</string>
+    <string name="title_activity_new_po">New PO</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_receipt_list">Shipments</string>
+    <string name="title_activity_receipt">Receipts</string>
+    <string name="title_activity_add_new_receipt_invoices">Create Receipt</string>
+    <string name="title_activity_update_receipt_invoices">Update Receipt</string>
+    <string name="title_activity_printgrnf_receipt_invoices">Receipt Confirmation</string>
+    <string name="title_activity_issue">IssueActivity</string>
+    <string name="title_activity_orders">OrdersActivity</string>
+    <string name="title_activity_pending_order">PendingOrderActivity</string>
+    <string name="title_activity_approve_issue_order">ApproveIssueOrderActivity</string>
+    <string name="connectionErrorMessage">Unable to connect: Error 101</string>
+    <string name="passwordDoesntMatch">Passowrd doesnt match</string>
+    <string name="title_activity_issue_order">IssueOrderActivity</string>
+    <string name="title_activity_new_order">Create Issue</string>
+    <string name="title_activity_draft_order">Update Issue</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="title_activity_picklist_confirmation">PicklistConfirmationActivity</string>
+    <string name="title_activity_issue_confirmation">IssueConfirmationActivity</string>
+    <string name="title_activity_edit_po">EditPOActivity</string>
+    <string name="title_activity_requested">RequestedActivity</string>
+    <string name="title_activity_stockstatus">Stock Status</string>
+    <string name="invalidDataMessage">Invalid Data! Please check the entries</string>
+    <string name="stockIsNotAvailableForApprovalMessaage">Currently there is no stock to approve!</string>
+    <string name="issueMessage"><![CDATA[Are you sure you want to <b>issue</b>?]]></string>
+    <!--<string name="submitMessage">Are you sure you want to <b>submit</b> this entry?</string>-->
+    <string name="draftSaveMessage"><![CDATA[Are you sure you want to <b>save</b>?]]></string>
+    <string name="submitMessage"><![CDATA[Are you sure you want to <b>submit</b>?]]></string>
+    <string name="canncelMessage"><![CDATA[Are you sure you want to <b>cancel</b>?]]></string>
+    <string name="printMessage"><![CDATA[Do you want to <b>print</b> now?]]></string>
+    <string name="voidMessage"><![CDATA[Are you sure you want to <b>void</b>?]]></string>
+    <string name="returnMessage"><![CDATA[Are you sure you want to <b>return</b>?]]></string>
+    <string name="approveMessage"><![CDATA[Are you sure you want to <b>approve</b>?]]></string>
+    <string name="updateMessage"><![CDATA[Are you sure you want to <b>update</b>?]]></string>
+
+    <string name="notConnectedToWifiMessage"><![CDATA[You are not connected to wifi. please try again. ]]></string>
+
+    <string name="transitionDirection">TransitionDirection</string>
+    <string name="leftTranstion">Left</string>
+    <string name="mytest">my test</string>
+    <array name="ReporstList">
+        <item>Stock Status</item>
+        <item>Bincard</item>
+        <item>VRF Report</item>
+        <item>GIT By Item</item>
+        <item>Suppliers SOH</item>
+        <item>Facilities With Issue</item>
+        <item>Facilities without Reorder</item>
+    </array>
+
+    <!--for the viewPager-->
+    <string name="last_received">Last Received</string>
+    <string name="pending_receipts">Pending Receipts</string>
+    <string name="unit">Unit</string>
+    <string name="item">Item</string>
+    <string name="SOH">SOH</string>
+    <string name="last_issued">Last Issued</string>
+    <string name="facility">Facility</string>
+    <string name="git">GIT</string>
+    <string name="ordered">Ordered</string>
+    <string name="WoS">WOS</string>
+    <string name="fill_rate">Fill Rate</string>
+    <string name="site_to_facility">Site to Facility</string>
+    <string name="hub_to_site">Hub to Site</string>
+    <string name="_3">3</string>
+    <string name="_2">2</string>
+    <string name="_1">1</string>
+    <string name="password">Password</string>
+    <string name="title_activity_apk__update">APK_Update</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="site">Site</string>
+    <string name="latest_version">Latest Version</string>
+    <string name="download_in_progress">download in-progress</string>
+</resources>

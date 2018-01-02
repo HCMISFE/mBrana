@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/neworder_rowno_"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:text="@string/_1"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/neworder_ItemColumn_"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:text="@string/_2"
+        android:textSize="@dimen/PO_PrimaryTextSize" />
+
+    <TextView
+        android:id="@+id/neworder_unitsTextview_"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:text="@string/_3"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/order_required"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:text="@string/_3"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/order_requested"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:background="@drawable/inputtextdrawable"
+        android:digits="1234567890"
+        android:gravity="end"
+        android:imeOptions="actionNext"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:text="4"
+        android:textSize="@dimen/primaryTextSize" />
+</LinearLayout>

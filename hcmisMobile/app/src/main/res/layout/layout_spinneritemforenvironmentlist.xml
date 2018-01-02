@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lightwhite_roundedcorners">
+    <!--android:padding="@dimen/smallPdding"-->
+    <TextView
+        android:id="@+id/spinnerTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_border_bottom"
+        android:gravity="left"
+        android:padding="5dp"
+        android:text="Spinner"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+</LinearLayout>

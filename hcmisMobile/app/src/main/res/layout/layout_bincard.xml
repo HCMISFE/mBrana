@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/smallPadding"
+    android:paddingStart="@dimen/smallPadding"
+    android:paddingTop="@dimen/smallPadding">
+
+    <TextView
+        android:id="@+id/bincard_dateColumn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.35"
+        android:text="Date" />
+
+    <TextView
+        android:id="@+id/bincard_ToFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.35"
+        android:text="To" />
+
+    <TextView
+        android:id="@+id/bincard_receivedColumn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:text="Rcv." />
+
+    <TextView
+        android:id="@+id/bincard_issuedColumn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:text="Iss." />
+
+    <TextView
+        android:id="@+id/bincard_sohColumn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:text="Blc." />
+</LinearLayout>

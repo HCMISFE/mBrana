@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jsi.mbrana">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="com.jsi.mbrana.AnalyticsApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme">
+
+        <activity
+            android:name="com.jsi.mbrana.Modules.UserManagement.MainNavigationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Modules.Receive.Activity.ShipmentsMenuActivity"
+            android:parentActivityName="com.jsi.mbrana.Modules.UserManagement.MainNavigationActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Modules.UserManagement.MainNavigationActivity" />
+        </activity>
+
+        <activity
+            android:name=".Modules.Receive.Activity.ReceiveMenuActivity"
+            android:parentActivityName=".Modules.Receive.Activity.ShipmentsMenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Modules.Receive.Activity.ShipmentsMenuActivity" />
+        </activity>
+
+        <activity android:name=".Modules.Receive.Activity.CreateReceiveActivity" />
+
+        <activity android:name="com.jsi.mbrana.Modules.Receive.Activity.UpdateReceiveActivity" />
+
+        <activity
+            android:name="com.jsi.mbrana.Modules.Receive.Activity.ConfirmReceiveActivity"
+            android:parentActivityName=".Modules.Receive.Activity.ReceiveMenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Modules.Receive.Activity.ReceiveMenuActivity" />
+        </activity>
+
+        <activity
+            android:name="com.jsi.mbrana.Workflow.Issue.Depreciated.IssueActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Modules.UserManagement.MainNavigationActivity" />
+        </activity>
+
+        <activity
+            android:name="com.jsi.mbrana.Workflow.Issue.Depreciated.OrdersActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Workflow.Issue.Depreciated.IssueActivity" />
+        </activity>
+
+        <activity
+            android:name="com.jsi.mbrana.Workflow.Issue.IssueMenuActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Modules.UserManagement.MainNavigationActivity" />
+        </activity>
+
+        <activity
+            android:name="com.jsi.mbrana.Workflow.Issue.ApproveIssueActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Workflow.Issue.IssueMenuActivity" />
+        </activity>
+
+        <activity
+            android:name="com.jsi.mbrana.Workflow.Issue.Depreciated.IssueOrderActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Workflow.Issue.IssueMenuActivity" />
+        </activity>
+
+        <activity
+            android:name="com.jsi.mbrana.Workflow.Issue.Depreciated.NewOrderActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Workflow.Issue.FacilitySelectionActivity" />
+        </activity>
+
+        <activity
+            android:name="com.jsi.mbrana.Workflow.Issue.UpdateIssueActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Workflow.Issue.IssueMenuActivity" />
+        </activity>
+
+        <activity
+            android:name="com.jsi.mbrana.Modules.UserManagement.LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.jsi.mbrana.Workflow.Order.OrderMenuActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Modules.UserManagement.MainNavigationActivity" />
+        </activity>
+
+        <activity
+            android:name="com.jsi.mbrana.Workflow.Order.CreateOrderActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Workflow.Order.OrderMenuActivity" />
+        </activity>
+
+        <activity
+            android:name="com.jsi.mbrana.Workflow.Issue.ConfirmPicklistActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Workflow.Issue.IssueMenuActivity" />
+        </activity>
+
+        <activity
+            android:name="com.jsi.mbrana.Workflow.Issue.PrintIssueActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Workflow.Issue.IssueMenuActivity" />
+        </activity>
+
+        <activity
+            android:name="com.jsi.mbrana.Workflow.Reports.StockStatusActivity"
+            android:parentActivityName="com.jsi.mbrana.Modules.UserManagement.MainNavigationActivity"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Modules.UserManagement.MainNavigationActivity" />
+        </activity>
+
+        <activity
+            android:name="com.jsi.mbrana.Workflow.Order.UpdateOrderActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Workflow.Order.OrderMenuActivity" />
+        </activity>
+
+        <activity
+            android:name="com.jsi.mbrana.Workflow.Order.ViewOrderActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Workflow.Order.OrderMenuActivity" />
+        </activity>
+
+        <activity android:name="com.jsi.mbrana.Workflow.Issue.FacilitySelectionActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Workflow.Issue.IssueMenuActivity" />
+        </activity>
+
+        <activity android:name="com.jsi.mbrana.Workflow.Issue.CreateIssueActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Workflow.Issue.FacilitySelectionActivity" />
+        </activity>
+
+        <activity android:name="com.jsi.mbrana.Workflow.Issue.VoidIssuesForReceiptActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Workflow.Issue.IssueMenuActivity" />
+        </activity>
+
+        <activity android:name="com.jsi.mbrana.Workflow.Issue.FacilitySelectionUpdateActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Workflow.Issue.UpdateIssueActivity" />
+        </activity>
+
+        <activity android:name="com.jsi.mbrana.Workflow.Reports.ListofFacilityWithIssueActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Modules.UserManagement.MainNavigationActivity" />
+        </activity>
+
+        <activity android:name="com.jsi.mbrana.Workflow.Reports.FacilitiesWithNoReorderActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Modules.UserManagement.MainNavigationActivity" />
+        </activity>
+
+        <activity
+            android:name="com.jsi.mbrana.Workflow.Reports.BincardActivity"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Modules.UserManagement.MainNavigationActivity" />
+        </activity>
+
+        <activity android:name="com.jsi.mbrana.Workflow.Reports.GitItemActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Modules.UserManagement.MainNavigationActivity" />
+        </activity>
+
+        <activity android:name="com.jsi.mbrana.Workflow.Reports.SupplierSOHActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Modules.UserManagement.MainNavigationActivity" />
+        </activity>
+
+        <activity android:name="com.jsi.mbrana.Workflow.Reports.ReportListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Modules.UserManagement.MainNavigationActivity" />
+        </activity>
+
+        <activity android:name="com.jsi.mbrana.Workflow.Reports.VRFReportActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Modules.UserManagement.MainNavigationActivity" />
+        </activity>
+
+        <activity
+            android:name="com.jsi.mbrana.Workflow.Update.UpdateActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <data android:scheme="file" />
+                <data android:mimeType="application/vnd.android.package-archive" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.jsi.mbrana.Workflow.Main.WelcomeActivity"
+            android:parentActivityName="com.jsi.mbrana.Modules.UserManagement.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jsi.mbrana.Modules.UserManagement.LoginActivity" />
+        </activity>
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="mFlow.db" />
+
+        <meta-data
+            android:name="VERSION"
+            android:value="3" />
+
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="com.jsi.hcmis_mobile.DataAccess.Database" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service android:name="com.jsi.mbrana.FCM.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.jsi.mbrana.FCM.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.jsi.mbrana.Workflow.Main.MainAppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/main_app_widget_info" />
+        </receiver>
+
+        <service android:name="com.jsi.mbrana.Extensions.CustomPhoneStateListener" />
+    </application>
+</manifest>

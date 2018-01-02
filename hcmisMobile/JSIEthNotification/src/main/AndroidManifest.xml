@@ -1,0 +1,25 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jsi.sublibrary">
+
+    <!--<uses-permission android:name="com.jsi.sublibrary.service.permission.MY_SERVICE_PERMISSION"></uses-permission>-->
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <service android:name="com.jsi.sublibrary.service.SubFirebaseInstanceIdService" android:exported="true">
+            <intent-filter>
+                <action android:name="MYSERVICE"/>
+            </intent-filter>
+        </service>
+        <service android:name=".service.SubFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.jsi.lib.service.MESSAGE"/>
+            </intent-filter>
+        </service>
+        
+    </application>
+
+</manifest>

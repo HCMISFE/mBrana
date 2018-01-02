@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/smallPadding"
+    android:paddingTop="@dimen/smallPadding">
+
+    <TextView
+        android:id="@+id/draftorderRowNo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:gravity="bottom"
+        android:text="No."
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/draftOrderItemColumn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.34"
+        android:gravity="bottom"
+        android:text="Item"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/draftOrderUnitsTextView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_weight="0.34"
+        android:gravity="bottom" />
+
+
+    <EditText
+        android:id="@+id/draftOrdercSOH"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_weight="0.36"
+        android:background="@drawable/inputtextdrawable"
+        android:digits="1234567890"
+        android:gravity="end"
+        android:imeOptions="actionNext"
+        android:inputType="phone"
+        android:maxLength="6"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:text="5"
+        android:textSize="@dimen/primaryTextSize" />
+
+    <EditText
+        android:id="@+id/draftOrderQtyColumn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.38"
+        android:background="@drawable/inputtextdrawable"
+        android:digits="1234567890"
+        android:gravity="end"
+        android:imeOptions="actionNext"
+        android:inputType="phone"
+        android:maxLength="6"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:text="6"
+        android:textSize="@dimen/primaryTextSize" />
+</LinearLayout>

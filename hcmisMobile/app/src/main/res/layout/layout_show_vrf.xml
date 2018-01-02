@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="4dp">
+
+    <TextView
+        android:id="@+id/vrf_rowno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:text=" "
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/vrf_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:text="Itm"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/vrf_unit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:text="Unt"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/vrf_beginning_balance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:text="BB"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/vrf_quantity_received"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:text="QR"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/vrf_consumption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:text="C"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/vrf_loss"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:text="L"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/vrf_ending_balance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:text="EB"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/vrf_required_for_next_supply_period"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:text="Rqr"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/vrf_requested_quantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.3"
+        android:background="@drawable/inputtextdrawable"
+        android:digits="1234567890"
+        android:enabled="false"
+        android:gravity="end"
+        android:imeOptions="actionNext"
+        android:inputType="phone"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:text="Rqs"
+        android:textSize="@dimen/primaryTextSize"
+        tools:ignore="LabelFor" />
+</LinearLayout>

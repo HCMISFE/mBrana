@@ -1,0 +1,181 @@
+<resources>
+    <!--mflow Colors-->
+    <color name="PrimaryDark">#455A64</color>
+    <color name="Primary">#546E7A</color>
+    <color name="Accent">#2d8aa9</color>
+    <color name="Background">#031926</color>
+    <color name="GridDetail">#D5D5D5</color>
+    <color name="GridDetailTint">#C8C8C8</color>
+    <color name="LightBlue">#2d8aa9</color>
+
+    <!--Notification Color Set-->
+    <color name="notification_success">#455A64</color>
+    <color name="notification_warning">#F0AD4E</color>
+    <color name="notification_failure">#d9534f</color>
+
+    <!--Material color-->
+    <color name="material_chart_hole">#25252F</color>
+    <color name="material_panel">#455E6B</color>
+    <color name="material_primary">#009688</color>
+    <color name="material_lightYellow">#F0AD4E</color>
+    <color name="material_DarkBrown">#e99e4c</color>
+    <color name="material_widget_receiveStatus">#64879A</color>
+    <color name="material_widget_draft">#46BFBD</color>
+    <color name="material_widget_submitted">#FDB55C</color>
+    <color name="material_widget_picklist">#91BBA9</color>
+    <color name="material_widget_issue">#F7815B</color>
+    <color name="material_widget_receive">#e1e1e1</color>
+    <color name="material_progress1">#16A8E2</color>
+    <color name="material_progress2">#1DC994</color>
+    <color name="material_progress_transparent">#00ffffff</color>
+    <color name="material_grid_header">#43606A</color>
+    <color name="material_grid_row_even">#D5D5D5</color>
+    <color name="material_grid_row_odd">#C8C8C8</color>
+    <color name="material_gradients1">#6FBDC9</color>
+    <color name="material_gradients3">#A9DBC5</color>
+    <color name="material_ss_red">#FE5756</color>
+    <color name="material_ss_yellow">#F3BB4F</color>
+    <color name="material_ss_green">#008F80</color>
+    <color name="material_ss_brown">#C21E1E</color>
+    <color name="material_ss_blue">#669EF3</color>
+    <color name="material_ss_grey">#E7E7E7</color>
+
+    <!--Spark Line Color-->
+    <color name="spark_line_color">#17235D</color>
+    <color name="spark_base_line_color">#757577</color>
+    <color name="spark_scrub_line_color">#757577</color>
+
+    <!--Color Collection-->
+    <color name="gray">#D4D4D4</color>
+    <color name="gray2">#F1F1F1</color>
+    <color name="gray3">#d8d8d8</color>
+    <color name="gray4">#a2a2a2</color>
+    <color name="gray7">#5c5353</color>
+    <color name="gray6">#797979</color>
+    <color name="black">#000000</color>
+    <color name="excess">#4471AB</color>
+    <color name="lightExcess3">#a81b7dc6</color>
+    <color name="normal">#3A8B3A</color>
+    <color name="stockout">#B8413D</color>
+    <color name="lightStockOut">#a2b8413d</color>
+    <color name="lightGray">#F4F4F4</color>
+    <color name="orange">#DD6B06</color>
+    <color name="white">#ffffff</color>
+    <color name="whitesmoke">#F5F5F5</color>
+    <color name="successMessage">#0d9c0d</color>
+    <color name="errorMessage">#d9534f</color>
+    <color name="logoBlueColor">#88D3EF</color>
+    <color name="red">#DA3D3D</color>
+    <color name="widgetBackground">#b5020202</color>
+
+    <!--TallerBarStyle-->
+
+    <!--AppTheme-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/Primary</item>
+        <item name="colorPrimaryDark">@color/PrimaryDark</item>
+        <item name="colorAccent">@color/Accent</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="spark_SparkViewStyle">@style/MySparkViewStyle</item>
+    </style>
+
+    <!--NoActionBar-->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="spark_SparkViewStyle">@style/MySparkViewStyle</item>
+    </style>
+
+    <!--AppBarOverlay-->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="spark_SparkViewStyle">@style/MySparkViewStyle</item>
+    </style>
+
+    <!--PopupOverlay-->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="spark_SparkViewStyle">@style/MySparkViewStyle</item>
+    </style>
+
+    <!--MySparkViewStyle & Color-->
+    <style name="MySparkViewStyle" parent="@style/spark_SparkView">
+        <item name="spark_lineColor">@color/spark_line_color</item>
+        <item name="spark_lineWidth">@dimen/spark_line_width</item>
+        <item name="spark_cornerRadius">@dimen/spark_corner_radius</item>
+        <item name="spark_fill">false</item>
+        <item name="spark_baseLineColor">@color/spark_base_line_color</item>
+        <item name="spark_baseLineWidth">@dimen/spark_base_line_width</item>
+        <item name="spark_scrubLineColor">@color/spark_scrub_line_color</item>
+        <item name="spark_scrubLineWidth">@dimen/spark_scrub_line_width</item>
+        <item name="spark_scrubEnabled">true</item>
+        <item name="spark_animateChanges">true</item>
+    </style>
+
+    <!--ButtonExcess-->
+    <style name="AppTheme.ButtonExcess" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/excess</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="spark_SparkViewStyle">@style/MySparkViewStyle</item>
+    </style>
+
+    <!--ButtonLogin-->
+
+    <!--ButtonLoginCustom-->
+    <style name="AppTheme.ButtonLoginCustom" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="colorButtonNormal">@color/LightBlue</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="spark_SparkViewStyle">@style/MySparkViewStyle</item>
+    </style>
+
+    <!--ButtonOrange-->
+    <style name="AppTheme.ButtonOrange" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/orange</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="spark_SparkViewStyle">@style/MySparkViewStyle</item>
+    </style>
+
+    <!--ButtonLightExcess-->
+    <style name="AppTheme.ButtonLightExcess" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/lightExcess3</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="spark_SparkViewStyle">@style/MySparkViewStyle</item>
+    </style>
+
+    <!--ButtonDangerExcess-->
+    <style name="AppTheme.ButtonDangerExcess" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/red</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="spark_SparkViewStyle">@style/MySparkViewStyle</item>
+    </style>
+
+    <!--FullscreenTheme-->
+
+    <!--FullscreenActionBarStyle-->
+
+    <!--LightTextForm-->
+    <style name="LightTextForm" parent="TextAppearance.AppCompat">
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:textColorHighlight">@color/material_primary</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorLink">@color/gray</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="colorControlNormal">@color/material_primary</item>
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+
+    <!--DarkTextForm-->
+
+    <!--Navigation Drawer Style-->
+    <style name="NavigationDrawerStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorLink">@color/material_ss_green</item>
+        <item name="android:textColorHint">@color/material_ss_yellow</item>
+        <item name="android:textColorHighlight">@color/material_ss_red</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="colorControlNormal">@color/GridDetail</item>
+        <item name="colorControlActivated">@color/GridDetailTint</item>
+    </style>
+</resources>

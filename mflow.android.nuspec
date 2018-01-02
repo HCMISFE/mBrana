@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>mflow.android</id>
+    <title>Mflow Android App</title>
+    <authors>HCMIS</authors>
+    <owners>HCMIS</owners>
+    <version>1.0</version>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>mflow android mobile app</description>
+    <releaseNotes>XXXI release</releaseNotes>
+  </metadata>
+  <files>
+  	<file src = "hcmisMobile\app\build\outputs\apk\mflow.apk"/>
+  	<file src = "hcmisMobile\app\version.json"/>
+  </files>  
+</package>

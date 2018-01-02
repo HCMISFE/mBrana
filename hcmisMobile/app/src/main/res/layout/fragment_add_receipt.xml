@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/LinearLayInvNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:text="STV/Invoice No."
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/EditSTVOrInvoiceNo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:selectAllOnFocus="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLaySupplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinearLayInvNo">
+
+        <TextView
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:text="Supplier"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/EditSupplier"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:selectAllOnFocus="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayInvType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinearLaySupplier">
+
+        <TextView
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:text="Invoice Type"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/EditInvoiceType"
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayInvAmout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinearLayInvType">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invoiced Amount"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/EditInvoicedAmount"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayRecAmout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinearLayInvAmout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Received Amount"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/EditReceivedAmount"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:selectAllOnFocus="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayPrintedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinearLayRecAmout">
+
+        <TextView
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:text="Printed Date"
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/edittxt_Printed"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:selectAllOnFocus="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayModel19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinearLayPrintedDate">
+
+        <TextView
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:text="Model19"
+            android:textSize="8pt" />
+
+        <EditText
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:selectAllOnFocus="true" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/StartDetailFragmentID"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayModel19"
+        android:text="Next" />
+</RelativeLayout>

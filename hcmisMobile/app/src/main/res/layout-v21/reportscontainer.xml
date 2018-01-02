@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.jsi.mbrana.Modules.UserManagement.MainNavigationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_margin="@dimen/smallPadding"
+            android:background="@drawable/roundedborderwhitesomokebackround"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Receipt Status"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lightGray">
+
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/ReceiptStatuschartcontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </com.github.mikephil.charting.charts.PieChart>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_margin="@dimen/smallPadding"
+            android:background="@drawable/roundedborderwhitesomokebackround"
+            android:gravity="right"
+            android:padding="@dimen/smallPadding"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order Status"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/lightGray">
+
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/OrderStatuschartcontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </com.github.mikephil.charting.charts.PieChart>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="@dimen/smallPadding"
+            android:background="@drawable/roundedborderwhitesomokebackround"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PO Status"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </com.github.mikephil.charting.charts.BarChart>
+
+            </android.support.design.widget.CoordinatorLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="@dimen/smallPadding"
+            android:background="@drawable/roundedborderwhitesomokebackround"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Issue Trend"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </com.github.mikephil.charting.charts.LineChart>
+
+            </android.support.design.widget.CoordinatorLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

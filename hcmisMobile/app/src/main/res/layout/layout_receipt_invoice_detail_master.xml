@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:drawable/dialog_holo_light_frame"
+    android:orientation="horizontal"
+    android:padding="3dp">
+
+    <TextView
+        android:id="@+id/ViewRecDetailMaster_TableCelSTVOrInvoiceNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.31"
+        android:paddingLeft="2dp"
+        android:text="RI #"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/ViewRecDetailMaster_TableCelSuppliere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.31"
+        android:paddingRight="1dp"
+        android:text="Supplier"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/ViewRecDetailMaster_TableCelDocumentType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.28"
+        android:paddingLeft="2dp"
+        android:text="Docutment Type"
+        android:textSize="11dp" />
+
+    <TextView
+        android:id="@+id/ViewRecDetailMaster_TableCelDocumentReceiptStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.28"
+        android:paddingLeft="1dp"
+        android:paddingRight="2dp"
+        android:text="Receipt Status"
+        android:textSize="11dp" />
+
+
+</LinearLayout>

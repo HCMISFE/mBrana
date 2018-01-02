@@ -1,0 +1,110 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RIIMaster"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Workflow.Receipt.Fragments.RIDetailInput">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/RIMasterLinearLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.31"
+                    android:paddingLeft="2dp"
+                    android:text="RI #"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.31"
+                    android:paddingRight="1dp"
+                    android:text="Supplier"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.28"
+                    android:paddingLeft="2dp"
+                    android:text="Docutment Type"
+                    android:textSize="11dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.28"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="2dp"
+                    android:text="Receipt Status"
+                    android:textSize="11dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0" />
+
+            <ListView
+                android:id="@+id/ReceiptInvloceListMaster_TableContainer"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="10"
+                android:padding="0dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/EditModel19"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/EditReceivedAmount"
+                    android:layout_below="@+id/EditReceivedAmount"
+                    android:hint="Model 19"
+                    android:inputType="text"
+                    android:selectAllOnFocus="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/StartDetailFragmentID"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/EditwPrintedDate"
+                android:layout_below="@+id/EditModel19"
+                android:text="Next" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

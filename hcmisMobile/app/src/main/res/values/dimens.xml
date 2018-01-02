@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="noPadding">0dp</dimen>
+    <dimen name="smallPadding">4dp</dimen>
+    <dimen name="primaryTextSize">6.5pt</dimen>
+    <dimen name="PO_PrimaryTextSize">6.5pt</dimen>
+    <dimen name="secondaryTextSize">14dp</dimen>
+    <dimen name="firstLetterTextSize">18dp</dimen>
+    <dimen name="xPaddingSize">7dp</dimen>
+    <dimen name="xRPaddingSize">18dp</dimen>
+    <dimen name="spark_line_width">1dp</dimen>
+    <dimen name="spark_corner_radius">2dp</dimen>
+    <dimen name="spark_base_line_width">1dp</dimen>
+    <dimen name="spark_scrub_line_width">2dp</dimen>
+    <dimen name="widget_margin">8dp</dimen>
+</resources>

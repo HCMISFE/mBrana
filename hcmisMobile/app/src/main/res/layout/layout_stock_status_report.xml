@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/stockstatusheaderdetailid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/ss_TableRowProductCN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:paddingLeft="1dp"
+            android:text="Item"
+            android:textAlignment="viewStart"
+            android:textSize="6pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ss_TableRowAWC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:text="AWC"
+            android:textColor="@color/black"
+            android:textSize="6.5pt" />
+
+        <TextView
+            android:id="@+id/ss_TableRowWOS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:text="WOS"
+            android:textColor="@color/black"
+            android:textSize="6.5pt" />
+
+        <TextView
+            android:id="@+id/tv_expired"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:text="Expired"
+            android:textColor="@color/black"
+            android:textSize="6.5pt" />
+
+        <TextView
+            android:id="@+id/tv_near_expiry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:text="Near Expired"
+            android:textColor="@color/black"
+            android:textSize="6.5pt" />
+
+        <TextView
+            android:id="@+id/ss_TableGridVVMExpired"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:text="VVM Expired"
+            android:textSize="6.5pt" />
+
+        <TextView
+            android:id="@+id/ss_TableRowSOH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:text="SOH"
+            android:textColor="@color/black"
+            android:textSize="6.5pt" />
+
+        <TextView
+            android:id="@+id/ss_TableRowUsableSOH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.23"
+            android:text="Usable SOH"
+            android:textColor="@color/black"
+            android:textSize="6.5pt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/ss_TableGridUnit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.24"
+            android:paddingLeft="-5dp"
+            android:text="Unit"
+            android:textColor="@color/gray4"
+            android:textSize="6pt" />
+
+    </LinearLayout>
+
+</LinearLayout>

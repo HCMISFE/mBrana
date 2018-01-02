@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/PrintGRNFRIMaterInput_TableRowNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:textAlignment="center"
+            android:text="No."
+            android:textSize="6.5pt" />
+
+        <TextView
+            android:id="@+id/PrintGRNFRIMaterInput_TableRowProductCN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.32"
+            android:text="Item"
+            android:textSize="6.5pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/PrintGRNFRIMaterInput_TableRowExpiry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.32"
+            android:hint="Expiry"
+            android:inputType="text"
+            android:textSize="6.5pt" />
+
+        <TextView
+            android:id="@+id/PrintGRNFRIMaterInput_TableRowRecievedBatch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.27"
+            android:background="@android:color/transparent"
+            android:hint="Batch"
+            android:inputType="text"
+            android:textSize="6.5pt" />
+
+        <TextView
+            android:id="@+id/PrintGRNFRIMaterInput_TableRowVVM"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.34"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="VVM"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:textSize="6.5pt" />
+
+        <TextView
+            android:id="@+id/PrintGRNFRIMaterInput_TableRowRecievedQuanitity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.32"
+            android:hint="Received"
+            android:inputType="number"
+            android:maxLength="7"
+            android:selectAllOnFocus="true"
+            android:textSize="6.5pt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"/>
+
+        <TextView
+            android:id="@+id/PrintGRNFRIMaterInput_TableRowUnit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.32"
+            android:text="Unit"
+            android:textColor="@color/gray4"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/PrintGRNFRIMaterInput_TableRowManufacturer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.93"
+            android:paddingLeft="0dp"
+            android:text="Manufacturer"
+            android:textColor="@color/gray4"
+            android:textSize="11dp" />
+
+        <TextView
+            android:id="@+id/inputPrintGRNFRIMaterInput_TableRowInvoicedQ"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.32"
+            android:hint="Invoiced"
+            android:paddingLeft="2dp"
+            android:textColor="@color/gray4"
+            android:textSize="11dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
